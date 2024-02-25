@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: svc-portal-noticias
+spec:
+  type: NodePort
+  ports:
+    - port: 8080
+      targetPort: 80
+      nodePort: 30000 #Se não definir cria uma aleatoria entre 30000 e 32767
+  selector:
+    app: portal-noticias
