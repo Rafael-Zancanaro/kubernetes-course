@@ -1,4 +1,3 @@
-```markdown
 # Kubernetes Basics Project
 
 ## Overview
